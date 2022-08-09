@@ -85,7 +85,7 @@ var chatMessages = [{
 
   {
     name: "ms13",
-    msg: "<strong class='c-1'>Кирилл:</strong>🔗 <a href='../CV_Кирилл_М.pdf' target='_blank'>CV_Кирилл_М.pdf</a>",
+    msg: "<strong class='c-1'>Кирилл:</strong>🔗 <a href='https://github.com/kirillabcd/CV/blob/0c639064b06b1f20dafcf8a53fd0e7b8f7b5a3c4/CV_%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB_%D0%9C.pdf</a>",
     delay: 500,
     align: "left",
 
