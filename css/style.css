@@ -65,9 +65,9 @@ a:hover{
 }
   
   #wrapper {
-    max-width: 900px;
+    width: 900px;
     margin: auto;
-    min-height: 700px;
+    height: 700px;
   }
   
   .c-1 { color: black; }
@@ -124,24 +124,6 @@ a:hover{
   .chat-container {
     height: 700px;
     overflow-y: scroll;
-  }
-
-  @media (max-width: 425.99px){
-    .chat-container {
-      height: 1200px;
-    }
-  }
-
-  @media (max-width: 375.99px){
-    .chat-container {
-      height: 1390px;
-    }
-  }
-
-  @media (max-width: 320.99px){
-    .chat-container {
-      height: 1600px;
-    }
   }
 
   .chat-container::-webkit-scrollbar {
@@ -216,5 +198,45 @@ a:hover{
     40% {
       -webkit-transform: scale(1.0);
       transform: scale(1.0);
+    }
+  }
+
+  @media (max-width: 1024.99px){
+    .message-right .message-text, .message-left .message-text{
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 769.99px){
+    .message-right .message-text, .message-left .message-text{
+      font-size: 25px;
+    }
+  }
+
+
+  @media (max-width: 425.99px){
+    /* .chat-container {
+      height: 1200px;
+    } */
+    @media (max-width: 769.99px){
+      .message-right .message-text, .message-left .message-text{
+        font-size: 20px;
+      }
+    }
+
+  }
+
+  @media (max-width: 375.99px){
+    /* .chat-container {
+      height: 1390px;
+    } */
+  }
+
+  @media (max-width: 320.99px){
+    /* .chat-container {
+      height: 1600px;
+    } */
+    .message-right .message-text, .message-left .message-text{
+      font-size: 16px;
     }
   }
