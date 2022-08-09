@@ -81,7 +81,7 @@ a:hover{
   }
   
   .chat-container {
-    height: 100vh;
+    height: 95vh;
     overflow-y:scroll;
   }
 
@@ -199,3 +199,9 @@ a:hover{
       font-size: 16px;
     }
   }
+
+@media (max-height: 699.99px){
+      .chat-container {
+      height: 95vh
+    }
+}
