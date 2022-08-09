@@ -26,7 +26,7 @@ a:hover{
   #wrapper {
     max-width: 900px;
     margin: auto;
-    height: 700px;
+    /* height: 700px; */
   }
   
   .c-1 { color: black; }
@@ -81,8 +81,8 @@ a:hover{
   }
   
   .chat-container {
-    height: 700px;
-    overflow-y: scroll;
+    height: 100vh;
+    overflow-y:scroll;
   }
 
   .chat-container::-webkit-scrollbar {
