@@ -231,18 +231,6 @@ a:hover{
 
 
   @media (max-width: 425.99px){
-    /* .chat-container {
-      height: 1200px;
-    } */
-    @media (max-width: 769.99px){
-      .message-right .message-text, .message-left .message-text{
-        font-size: 20px;
-      }
-    }
-
-  }
-
-  @media (max-width: 375.99px){
     .cv-header {
       flex-direction: column;
     }
@@ -262,7 +250,17 @@ a:hover{
       writing-mode:horizontal-tb;
       font-size: 20px;
     }
+  }
 
+  @media (max-width: 769.99px){
+    .message-right .message-text, .message-left .message-text{
+      font-size: 20px;
+    }
+  }
+
+  
+
+  @media (max-width: 375.99px){
   }
 
   @media (max-width: 320.99px){
