@@ -243,16 +243,6 @@ a:hover{
   }
 
   @media (max-width: 375.99px){
-    /* .chat-container {
-      height: 1390px;
-    } */
-  }
-
-  @media (max-width: 320.99px){
-    .message-right .message-text, .message-left .message-text{
-      font-size: 16px;
-    }
-
     .cv-header {
       flex-direction: column;
     }
@@ -263,7 +253,6 @@ a:hover{
 
     .cv-header_name {
       font-family:Vollkorn;
-      font-weight: 700;
       font-size: 60px;
       color:#0050f5;
       line-height: 60px;
@@ -274,7 +263,12 @@ a:hover{
       font-size: 20px;
     }
 
+  }
 
+  @media (max-width: 320.99px){
+    .message-right .message-text, .message-left .message-text{
+      font-size: 16px;
+    }
   }
 
 @media (max-height: 699.99px){
