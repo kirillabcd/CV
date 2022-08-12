@@ -16,7 +16,7 @@
 }
 
 @font-face {
-	font-family: Vollkorn;
+	font-family: Vollkorn-Bold;
 	font-display: swap;
 	src: url("../fonts/Vollkorn-Bold.woff2") format("woff2"), url("../fonts/Vollkorn-Bold.woff") format("woff");
 	font-weight: 700;
@@ -169,9 +169,10 @@ a:hover{
     align-items: flex-start;
   }
   .cv-header_name {
-    font-family:Vollkorn;
+    font-family:Vollkorn-Bold;
     font-weight: 700;
     font-size: 120px;
+    letter-spacing: .3rem;
     color:#0050f5;
     line-height: 120px;
   }

@@ -28,7 +28,7 @@ var chatMessages = [{
   },
   {
     name: "ms5",
-    msg: "<strong class='c-1'>Кирилл:</strong> Меня зовут Кирилл Моцарт, хочу к тебе в команду)",
+    msg: "<strong class='c-1'>Кирилл:</strong> Меня зовут Кирилл, хочу к тебе в команду)",
     delay: 700,
     align: "left",
 
