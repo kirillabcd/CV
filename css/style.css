@@ -20,7 +20,7 @@
 	font-display: swap;
 	src: url("../fonts/Vollkorn-Bold.woff2") format("woff2"), url("../fonts/Vollkorn-Bold.woff") format("woff");
 	font-weight: 700;
-	font-style: normal;
+	font-style: bold;
 }
 
 @font-face {
@@ -37,11 +37,11 @@
 
 a{
     text-decoration:none;
-    color:#0085D1;
+    color:#0050f5;
 }
 
 a:hover{
-    border-bottom: 2px dotted #0084ff;
+    border-bottom: 2px dotted #0050f5;
     padding-bottom: 3px;
 }
   
@@ -87,7 +87,7 @@ a:hover{
     max-width: 75%;
     line-height: 1.5em;
     display: inline-block;
-    background: #0084ff;
+    background: #0050f5;
     padding: 15px;
     font-size: 40px;
     color: #fff;
@@ -117,7 +117,7 @@ a:hover{
     border-radius: 30px;
     line-height: 1.25em;
     opacity: 1;
-    background: #0084ff;
+    background: #0050f5;
   }
   
   .spinme-left {
@@ -160,12 +160,13 @@ a:hover{
 
   }
   .cv-container {
-    max-width: 90vw;
+    max-width: 95%;
     margin: 0 auto;
   }
   .cv-header {
+    margin: 0 5px 0 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
   .cv-header_name {
@@ -177,11 +178,15 @@ a:hover{
     line-height: 120px;
   }
   .cv-header_chart {
-    padding: 0 20px;
+    padding: 0 0 0 5px;
+    max-height: 220px;
+    max-width: 380px;
   }
 
-  .cv-header_svg {
+  .cv-header_img {
+    display: block;
     max-height: 220px;
+    max-width: 380px;
   }
 
 
@@ -222,14 +227,53 @@ a:hover{
     .message-right .message-text, .message-left .message-text{
       font-size: 32px;
     }
+
+    .cv-header_name {
+      font-size: 90px;
+      line-height: 90px;
+    }
+
+    .cv-header_img {
+      max-height: 160px;
+    }
+
+    .cv-header_analyst {
+      font-size: 24px;
+    }
   }
 
   @media (max-width: 769.99px){
     .message-right .message-text, .message-left .message-text{
       font-size: 25px;
     }
+    .cv-header {
+      max-width: 700px;
+      flex-direction: column;
+    }
+    .cv-header_name {
+      font-size: 80px;
+      line-height: 80px;
+      max-width: 300px;
+    }
+
+    .cv-header_img {
+      display: none;
+    }
+    .cv-header_analyst {
+      writing-mode:horizontal-tb;
+      font-size: 40px;
+    }
   }
 
+  @media (max-height: 699.99px){
+    .chat-container {
+    height: 85vh
+  }
+
+  .chat {
+    padding: 20px 20px 50px 20px;
+  }
+}
 
   @media (max-width: 425.99px){
     .cv-header {
@@ -246,22 +290,6 @@ a:hover{
       color:#0050f5;
       line-height: 60px;
     }
-
-    .cv-header_analyst {
-      writing-mode:horizontal-tb;
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 769.99px){
-    .message-right .message-text, .message-left .message-text{
-      font-size: 20px;
-    }
-  }
-
-  
-
-  @media (max-width: 375.99px){
   }
 
   @media (max-width: 320.99px){
@@ -269,14 +297,3 @@ a:hover{
       font-size: 16px;
     }
   }
-
-@media (max-height: 699.99px){
-      .chat-container {
-      height: 85vh
-    }
-
-    .chat {
-      border-radius: 30px;
-      padding: 20px 20px 50px 20px;
-    }
-}
