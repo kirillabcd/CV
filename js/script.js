@@ -85,7 +85,7 @@ var chatMessages = [{
 
   {
     name: "ms13",
-    msg: "<strong class='c-1'>Кирилл:</strong>🔗 <a href='https://raw.githubusercontent.com/kirillabcd/CV/0c639064b06b1f20dafcf8a53fd0e7b8f7b5a3c4/CV_%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB_%D0%9C.pdf' target='_blank'>CV_Кирилл_М.pdf</a>",
+    msg: "<strong class='c-1'>Кирилл:</strong>🔗 <a href='#cv'>Кирилл_М_CV</a>",
     delay: 500,
     align: "left",
 
@@ -130,4 +130,10 @@ var chatMessages = [{
     // }
     
     scroll = false;
+  });
+
+  $('ul.cv-tabs').on('click', 'li:not(cv-tab_active)', function() {
+    $(this)
+      .addClass('cv-tab_active').siblings().removeClass('cv-tab_active')
+      .closest('div.cv-content-container').find('div.cv-content').removeClass('cv-content_active').eq($(this).index()).addClass('cv-content_active');
   });
