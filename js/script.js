@@ -1,14 +1,7 @@
 var chatMessages = [{
     name: "ms1",
-    msg: "<strong class='c-1'>Кирилл:</strong> Привет, Сбермаркетинг!",
-    delay: 10,
-    align: "left",
-
-  },
-  {
-    name: "ms2",
-    msg: "<strong class='c-1'>Кирилл:</strong> Спишь?",
-    delay: 600,
+    msg: "<strong class='c-1'>Кирилл:</strong> Привет, спишь?",
+    delay: 60,
     align: "left",
 
   },
